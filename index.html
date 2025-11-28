@@ -1,44 +1,25 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="id">
 <head>
-  <title>Statistik PTSK</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Statistik PTSK</title>
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="manifest" href="site.webmanifest">
-  
   <style>
-    /* 1. Alih keluar 'overflow: hidden' dan gunakan 'min-height' pada body */
-    body {
-      margin: 0;
-      padding: 0;
-      /* Memastikan body sekurang-kurangnya setinggi skrin */
-      min-height: 100vh; 
-      width: 100vw;
-      /* Memberi padding tambahan pada bahagian bawah body untuk ruang scroll*/
-      padding-bottom: 50px; /* Boleh ubah nilai ini (cth: 50px) */
-    }
-    
-    /* 2. iFrame tidak lagi fixed dan akan mengikut aliran dokumen (document flow) */
-    .mobile-fullscreen-iframe {
-      position: absolute; /* Tukar daripada 'fixed' kepada 'absolute' */
-      top: 0;
-      left: 0;
-      width: 100%;
-      /* iFrame mesti setinggi 100% daripada ketinggian body (100vh + padding) */
-      height: 100%; 
-      border: none;
-    }
+    html,body{height:100%;margin:0;padding:0;overflow:hidden;background:#fff}
+    iframe{width:100%;height:100%;border:none}
   </style>
 </head>
 <body>
   <iframe 
     src="https://script.google.com/macros/s/AKfycbzw212B_9QblQATpilxk6U-FMvgN09bLadQDtNjD8sK0V1N51Yn2UHWqDBTTcNw-p2TcA/exec"
-    class="mobile-fullscreen-iframe"
-    allowfullscreen="true">
+    allowfullscreen>
   </iframe>
+</body>
+</html>
 
 </body>
 </html>
